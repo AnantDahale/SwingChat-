@@ -4,12 +4,12 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import javax.swing.*;
 
-public class Server extends JFrame implements ActionListener {
+public class Client extends JFrame implements ActionListener {
     JTextField text;
     JPanel a1;
     Box vertical = Box.createVerticalBox();
 
-    Server() {
+    Client() {
 
         setLayout(null);
 
@@ -31,13 +31,13 @@ public class Server extends JFrame implements ActionListener {
             }
         });
 
-        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/billu.png"));
+        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/dogesh.png"));
         Image i5 = i4.getImage().getScaledInstance(40, 55, Image.SCALE_DEFAULT);
         JLabel profile = new JLabel(new ImageIcon(i5));
         profile.setBounds(40, 10, 50, 50);
         p1.add(profile);
 
-        JLabel name = new JLabel("Billu Don");
+        JLabel name = new JLabel("Dogesh Bhai");
         name.setBounds(110, 15, 100, 18);
         name.setForeground(Color.WHITE);
         name.setFont(new Font("SAN_SERIF", Font.BOLD, 18));
@@ -67,7 +67,7 @@ public class Server extends JFrame implements ActionListener {
         add(send);
 
         setSize(450, 700);
-        setLocation(200, 50);
+        setLocation(800, 50);
         setUndecorated(true);
         getContentPane().setBackground(Color.white);
 
@@ -117,6 +117,6 @@ public class Server extends JFrame implements ActionListener {
 
 
     public static void main(String[] args) {
-        new Server();
+        new Client();
     }
 }
